@@ -1,0 +1,206 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+  font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+  outline: 0;
+}
+
+legend, label {
+  font-family: sans-serif;
+  padding: 0 4px;
+}
+
+.text_input {
+  background: rgb(121, 121, 121);
+  color: whitesmoke;
+  width: 4em;
+  height: 1.5em;
+  margin: 5px 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+.text_label {
+  display: inline-block;
+  width: 120px;
+
+}
+
+.button, .hidden_button {
+  background: rgb(121, 121, 121);
+  color: whitesmoke;
+  height: 2em;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.hidden_button {
+  display: none;
+}
+
+.flexer {
+  max-width: 1200px;
+  display: flex;
+}
+
+.container {
+  margin-left: 100px;
+  margin-top: 0;
+  width: 250px;
+  /* display: inline-block; */
+  clear: both;
+}
+
+.aform {
+  margin-top: 1em;
+  text-align: left;
+
+}
+
+.radio {
+  display: inline-block;
+}
+
+.tb {
+  width: 0px;   /* set dynamically by initBoard in .js file */
+}
+
+[class^="tile"] {
+  /* box-sizing: border-box; */
+  width: 21px;
+  height: 21px;
+  border: 2px solid;
+  /* display: table-cell; */
+  float: left;
+  text-align: center;
+  background-color: #bdbdbd;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.tile {
+  border-bottom-color: #7b7b7b;
+  border-right-color: #7b7b7b;
+  border-left-color: whitesmoke;
+  border-top-color: whitesmoke;
+}
+
+.tile_down, .tile_false_flag, .tile_this_bomb {
+  border-bottom-color: #7b7b7b;
+  border-right-color: #7b7b7b;
+  border-left-color: #bdbdbd;
+  border-top-color: #bdbdbd;
+  width: 21px;
+  height: 21px;
+  background-color: #bdbdbd;
+}
+
+.tile_false_flag {
+  background-color: rgb(176, 178, 255);
+}
+
+.tile_this_bomb {
+  background-color: red;
+}
+
+.one {
+  color: blue;
+}
+
+.two {
+  color: green;
+}
+
+.three {
+  color: red;
+}
+
+.four {
+  color: navy;
+}
+
+.five { 
+  color: rgb(63, 30, 30);
+}
+
+.six {
+  color: rgb(0, 255, 242);
+}
+
+.seven {
+  color: rgb(130, 16, 134);
+}
+
+.eight {
+  color: rgb(179, 161, 0);
+}
+
+.row {
+  display: block;
+  clear: both;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+p {
+  text-align: left;
+  padding-left: 2em;
+}
+
+.info {
+  margin-top: 1em;
+  width: 90%;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  box-shadow: 10px 10px 10px rgb(58, 58, 58);
+  color: rgb(63, 63, 63);
+  background: silver;
+  font-size: 1em;
+  font-family: sans-serif;
+  display: none;
+  text-align: center;
+  z-index: 1;
+}
+
+.empty {
+  list-style-type: none;
+  text-align: left;
+  padding-left: 2em;
+}
+
+.package {
+  border: 6px solid rgb(201, 201, 201);
+  margin-top: 1em;
+  margin-left: 2em;
+}
+
+.fas.fa-flag {
+  font-style: italic;
+  font-size: 12px;
+}
+
+.fas.fa-bomb {
+  font-size: 12px;
+}

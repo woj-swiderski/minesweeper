@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Minesweeper</title>
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+<body>
+
+<div class="flexer">
+
+  <div class="container">
+
+    <form class="aform">
+      <label class="text_label" for="msg">Flags left:</label><input class="text_input" type="text" id="msg"/><br>
+      <label class="text_label" for="timer">Time lapsed:</label><input class="text_input" type="text" id="timer" />
+      <input id="new_game_button" class="button" type="button" value="New game"/>
+      <fieldset>
+        <legend>Difficulty level</legend>
+        <input class="radio" name="level" type="radio" value=0 id="beginner" checked/>
+        <label for="beginner">Beginner</label><br>
+
+        <input class="radio" name="level" type="radio" value=1 id="intermediate"/>
+        <label for="intermediate">Intermediate</label><br>
+
+        <input class="radio" name="level" type="radio" value=2 id="advanced"/>
+        <label for="advanced">Advanced</label>
+      </fieldset>
+    </form>
+    <div id="msg2" class="info">
+
+      <!-- <input id="clear_records" class="hidden_button" type="button" value="Clear records"/> -->
+    </div>
+
+  </div>
+
+  <div class="package">  <!-- <--- this div is for flexer's sake -->
+    <!-- <p id="msg2" class="info"></p> -->
+    <div id="stable" class="tb">
+    <!-- minesweeper board will be created dynamically -->
+    </div>
+  </div>
+
+</div>
+
+<script  src="./script.js"></script>
+
+
+</body>
+</html>
