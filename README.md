@@ -1,1 +1,3 @@
-# Pure JavaScript minesweeper game. Three difficulty levels, local storage keeps the three results.
+## Pure JavaScript minesweeper game
+- three difficulty levels
+- local storage keeps three best results
